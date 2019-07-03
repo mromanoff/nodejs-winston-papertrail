@@ -1,0 +1,20 @@
+{
+  "name": "papertrail",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "set NODE_ENV=production&&node server.js",
+    "dev": "set NODE_ENV=development&&node server.js",
+    "local": "set NODE_ENV=local&&node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.2.1",
+    "express": "^4.16.3",
+    "moment": "^2.22.1",
+    "winston": "^3.2.1",
+    "winston-papertrail": "^1.0.5"
+  }
+}
