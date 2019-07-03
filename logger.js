@@ -1,7 +1,7 @@
 const winston = require("winston");
 const moment = require("moment");
 const path = require("path");
-var pjson = require('./package.json');
+let package = require('./package.json');
 const PROJECT_ROOT = path.join(__dirname, "..");
 require('winston-papertrail').Papertrail;
 
@@ -18,7 +18,7 @@ const paperLogger = new winston.transports.Papertrail({
   host: '<PLACE_YOUR_HOST_HERE>',
   port: 0000, // replace with your port
   colorize: true,
-  program: pjson.name, 
+  program: package.name,
   inlineMeta: true,
   logFormat: function (level, message){
     if(level === 'error'){

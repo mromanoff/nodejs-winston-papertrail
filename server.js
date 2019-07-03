@@ -14,8 +14,9 @@ setInterval(() =>{
     logger.debug('Debug Message')
 }, 500);
 
+// Throw an error
 try{
-    const t=t/1;
+    const test = test / 1;
 }catch(err){
     logger.error(err);
 }
